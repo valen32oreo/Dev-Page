@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dev Page</title>
+  <meta name="description" content="Portfolio pribadi — Web Designer & Game Developer. Responsive, clean, and modern." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav at-top container" role="navigation" aria-label="Main navigation">
+      <div class="brand">
+        <div class="logo">
+          <img src="img/Logo 1-Photoroom.png" alt="Logo">
+        </div>
+        <div>
+          <div class="brand-name">KRISNA VALENCIA HIDAYAT</div>
+          <div class="small">Game Developer | Frontend Developer</div>
+        </div>
+      </div>
+
+      <!-- mobile toggle -->
+      <button class="nav-toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">☰ <span class="sr-only">Toggle menu</span></button>
+
+      <!-- desktop links (kept as-is for desktop) -->
+      <nav class="nav-links" aria-hidden="false">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="#work">View My Work</a>
+      </nav>
+
+      <!-- mobile dropdown menu (same links for mobile) -->
+      <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="#work" class="cta-mobile">View My Work</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <h1>KRISNA VALENCIA HIDAYAT — Game & Frontend Developer</h1>
+          <p class="lead">I transform ideas into stunning digital experiences. Blending aesthetic design with seamless functionality to create websites that captivate and games that inspire.</p>
+
+          <div class="actions">
+            <a class="cta" href="#work">View My Work</a>
+            <a href="#contact" class="contact-btn">Contact Me</a>
+          </div>
+
+          <div class="social-links">
+            <a href="javascript:void(0)" class="social-link" aria-label="LinkedIn">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://github.com/valen32oreo" target="_blank" aria-label="GitHub" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://instagram.com/valenkrsss_" target="_blank" aria-label="Instagram" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </div>
+
+          <!-- quick highlights -->
+          <div class="quick-highlights">
+            <div class="skill-card">
+              <div class="icon" style="background:#FFB400;">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <span>UI/UX</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="icon" style="background:#799EFF;">
+                <i class="fas fa-gamepad"></i>
+              </div>
+              <span>Game Developer</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="icon" style="background:#898AC4;">
+                <i class="fas fa-server"></i>
+              </div>
+              <span>Database</span>
+            </div>
+          </div>
+        </div>
+        <div class="card floating-shapes" aria-hidden>
+          <div class="avatar">
+            <img src="img/Photo 2.jpg" alt="Avatar"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-title"><h2>About Me</h2><div class="spacer"></div></div>
+      <div class="row">
+        <div class="about-col">
+          <div class="card">
+            <h3>Hello — I'm Krisna, also known as Valen</h3>
+            <p class="muted about-desc">A passionate Frontend Developer with a strong eye for design and a deep appreciation for clean, minimalistic web experiences. I specialize in building responsive, user-centric websites using modern technologies, with a focus on performance, accessibility, and elegant user interfaces. I take pride in crafting seamless digital experiences that not only look great but also function flawlessly across all devices.</p>
+           
+            <div class="about-cta">
+              <a href="https://valen32oreo.github.io/Valen-Web/" target="_blank" aria-label="Portfolio" class="cta">See Portfolio</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-col">
+          <div class="card">
+            <h3>Quick Facts</h3>
+            <div class="facts-grid">
+              <div><strong>Location</strong><div class="small muted">Indonesia</div></div>
+              <div><strong>Experience</strong><div class="small muted">2+ years</div></div>
+              <div><strong>Role</strong><div class="small muted">Freelance & Solo Dev</div></div>
+              <div><strong>Tools</strong><div class="small muted">Figma, Unity, VSCode</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK / PORTFOLIO -->
+    <section id="work" class="section">
+      <div class="section-title"><h2>Selected Work</h2><div class="spacer"></div></div>
+
+      <div class="grid">
+        <!-- Project 1 -->
+        <article class="card-project">
+          <img src="img/Document 5.png" alt="CrimsonRecoil"/>
+          <div class="overlay">
+            <div>
+              <div class="badge">Crimson Recoil</div>
+              <div class="project-title">This is a game that I created, and it's currently still in the development stage.</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card-project">
+          <img src="img/WhaleHouse.JPG" alt="WhaleHouse"/>
+          <div class="overlay">
+            <div>
+              <div class="badge">WhaleHouse</div>
+              <div class="project-title">This is a clothing business project that I made myself, but it's still a Demo.</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card-project">
+          <img src="img/StoryMI.JPG" alt="MCStory"/>
+          <div class="overlay">
+            <div>
+              <div class="badge">MC Story</div>
+              <div class="project-title">This is a fictional story I created based on Minecraft.</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="card-project">
+          <img src="img/Beanology.JPG" alt="Beanology"/>
+          <div class="overlay">
+            <div>
+              <div class="badge">Beanology</div>
+              <div class="project-title">Beanology — flavor that warms the soul.</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-title">
+        <h2>Skills</h2>
+        <div class="spacer"></div>
+      </div>
+      <div class="skills">
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="skill-icon">
+          <strong>Figma</strong>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="skill-icon">
+          <strong>HTML</strong>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="skill-icon">
+          <strong>CSS</strong>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon">
+          <strong>JavaScript</strong>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="skill-icon">
+          <strong>PHP</strong>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-icon">
+          <strong>Python</strong>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="skill-icon">
+          <strong>C++</strong>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" class="skill-icon">
+          <strong>C#</strong>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity" class="skill-icon">
+          <strong>Unity</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-title"><h2>Contact</h2><div class="spacer"></div></div>
+
+      <div class="contact-wrapper">
+        <div class="contact-form-col">
+          <div class="card">
+            <form id="contactForm">
+              <div class="row-form">
+                <input type="text" name="name" placeholder="Your name" required />
+                <input type="email" name="email" placeholder="Email" required />
+              </div>
+              <div class="textarea-wrapper">
+                <textarea name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="form-footer">
+                <button type="submit">Send message</button>
+                <div class="small muted">Or reach me via
+                  <a href="https://instagram.com/valenkrsss_" target="_blank" aria-label="Instagram" class="twitter-link">@instagram</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="contact-info-col">
+          <div class="card">
+            <h3>Let's build something</h3>
+            <p class="muted contact-desc">Available for freelance projects, prototypes, and long-term collaborations. I can help with UI, frontend, and game prototyping.</p>
+
+            <div class="contact-item">
+              <strong>Email</strong>
+              <div class="small muted">rzkrisna129@gmail.com</div>
+            </div>
+
+            <div class="contact-item">
+              <strong>Location</strong>
+              <div class="small muted">Indonesia</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="small muted">© 2025 Ryzcle. All Rights Reserved.</div>
+        <div class="small muted">Crafted with lots of coffee.</div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -29,10 +29,51 @@
     html {
         scroll-behavior: smooth;
     }
-    
+
     body { 
         font-family: 'Inter', sans-serif;
     }
+
+    /* Documentation */
+    .scroll {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding: 10px 0;
+    }
+
+    .scroll {
+        transition: transform 0.3s ease, color 0.3s ease;
+        scroll-behavior: smooth;
+    }
+
+    .scroll:hover {
+        transform: scale(1.10);
+    }
+
+    .scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .example {
+        width: 300px;
+        height: 200px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        overflow: hidden; /* important to keep image inside rounded corners */
+        scroll-snap-align: center;
+        background-color: antiquewhite;
+    }
+
+    .example img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* makes image fill box nicely */
+        display: block;
+    }
+    /* End Documentation */
   </style>
 </head>
 <body class="bg-soft text-slate-700">
@@ -92,6 +133,32 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <section data-aos="zoom-in" id="about" class="about" aria-label="About Me">
+  <h2>Documentation.</h2>
+    <div class="scroll">
+        <div class="example">
+            <img src="img2/Document 1.png" alt="P1">
+        </div>
+        <div class="example">
+            <img src="img2/Document 2.png" alt="P2">
+        </div>
+        <div class="example">
+            <img src="img2/Document 3.png" alt="P3">
+        </div>
+        <div class="example">
+            <img src="img2/Document 4.png" alt="P4">
+        </div>
+        <div class="example">
+            <img src="img2/Document 5.png" alt="P5">
+        </div>
+        <div class="example">
+            <img src="img2/Document 6.png" alt="P6">
+        </div>
+        <div class="example">
+            <img src="img2/Document 7.png" alt="P7">
+        </div>
     </div>
   </section>
 

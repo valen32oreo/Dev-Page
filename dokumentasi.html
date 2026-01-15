@@ -105,51 +105,119 @@
     }
 
     /* Footer */
-    footer {
-        background-color: #1f2937;
-        color: #fff;
-        padding: 30px 20px 15px;
-        font-family: 'Segoe UI', sans-serif;
-        text-align: center;
-    }
+footer {
+  background-color: #1f2937;
+  color: #fff;
+  padding: 30px 20px 15px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
 
-    .footer-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-    }
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
 
-    .nav-links {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-        flex-wrap: wrap;
-    }
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 
-    /* RYZCLE */
-    .footer-content-rz {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 100px;
-    }
+/* RYZCLE */
+.footer-content-rz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
 
-    .nav-ryzcle {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-        flex-wrap: wrap;
-    }
+.nav-ryzcle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 
-    .logoR {
-        width: 150px;
-        height: 100px;
-        object-fit: contain;
-    }
+.logoR {
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+}
 /* END */
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+
+  /* Transition untuk hover smooth */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-icons a {
+  font-size: 26px;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #38bdf8;
+  transform: scale(1.2);
+}
+
+.footer-divider {
+  width: 80%;
+  height: 1px;
+  background-color: #c2c2c2;
+}
+
+footer p {
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+/* End .Footer*/
   </style>
 </head>
 <body class="bg-soft text-slate-700">

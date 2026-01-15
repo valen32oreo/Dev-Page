@@ -911,6 +911,24 @@ button[type=submit] {
   cursor: pointer;
 }
 
+.btn-doc {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 18px;
+  background: #2563eb; /* biru */
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-doc:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+}
+
 /* ---------- Footer ---------- */
 footer {
   margin-top: 40px;

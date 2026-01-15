@@ -11,62 +11,76 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e293b',
+            accent: '#2563eb',
+            soft: '#f8fafc'
+          }
+        }
+      }
+    }
+  </script>
+
   <style>
     body { font-family: 'Inter', sans-serif; }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-700">
+<body class="bg-soft text-slate-700">
 
   <!-- HEADER -->
   <header class="bg-white border-b sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-semibold text-slate-800">Project Documentation</h1>
-      <nav class="hidden md:flex gap-6 text-sm font-medium">
-        <a href="#valen" class="hover:text-blue-600">Valen Gadget Rent</a>
-        <a href="#beanology" class="hover:text-blue-600">Beanology</a>
+      <h1 class="text-xl font-semibold text-primary">Project Documentation</h1>
+      <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-600">
+        <a href="#valen" class="hover:text-accent transition">Valen Gadget Rent</a>
+        <a href="#beanology" class="hover:text-accent transition">Beanology</a>
       </nav>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="bg-gradient-to-br from-blue-600 to-indigo-600 text-white">
-    <div class="max-w-7xl mx-auto px-6 py-24 text-center">
-      <h2 class="text-4xl md:text-5xl font-bold mb-6">Web Project Documentation</h2>
-      <p class="max-w-2xl mx-auto text-lg text-white/90">
-        This page contains complete documentation for the web projects I have developed, including system features, technologies, and design approaches.
+  <section class="bg-gradient-to-br from-primary to-slate-800 text-white">
+    <div class="max-w-7xl mx-auto px-6 py-28 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">Professional Web Project Documentation</h2>
+      <p class="max-w-2xl mx-auto text-lg text-white/80">
+        A structured and well-documented showcase of modern web applications, focusing on functionality, technology stack, and clean user experience.
       </p>
     </div>
   </section>
 
   <!-- VALEN GADGET RENT -->
-  <section id="valen" class="max-w-7xl mx-auto px-6 py-20">
-    <div class="grid lg:grid-cols-2 gap-14 items-center">
-      <img src="img/Valen Rent.png" alt="Valen Gadget Rent" class="rounded-2xl shadow-lg">
+  <section id="valen" class="max-w-7xl mx-auto px-6 py-24">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <img src="img/Valen Rent.png" alt="Valen Gadget Rent" class="rounded-2xl shadow-xl border">
 
       <div>
-        <span class="inline-block mb-3 px-4 py-1 rounded-full bg-blue-100 text-blue-600 text-sm font-medium">Laravel 11 Project</span>
-        <h3 class="text-3xl font-bold text-slate-800 mb-5">Valen Gadget Rent</h3>
-        <p class="mb-6 leading-relaxed">
-          Valen Gadget Rent is a web-based gadget rental system developed using Laravel 11. The platform allows users to browse available gadgets, place rental orders, and manage transactions efficiently through a modern and user-friendly interface.
+        <span class="inline-block mb-4 px-4 py-1 rounded-full bg-blue-50 text-accent text-sm font-medium">Laravel 11 Application</span>
+        <h3 class="text-3xl font-bold text-primary mb-6">Valen Gadget Rent</h3>
+        <p class="mb-8 leading-relaxed text-slate-600">
+          Valen Gadget Rent is a web-based gadget rental platform developed with Laravel 11. The system is designed to manage gadget availability, rental transactions, and user interactions efficiently through a clean and professional interface.
         </p>
 
         <div class="grid sm:grid-cols-2 gap-6">
-          <div class="bg-white rounded-xl p-5 shadow">
-            <h4 class="font-semibold mb-2">Key Features</h4>
-            <ul class="text-sm space-y-1 list-disc list-inside">
-              <li>User authentication & authorization</li>
-              <li>Gadget catalog & filtering</li>
-              <li>Online rental transactions</li>
-              <li>Admin dashboard management</li>
+          <div class="bg-white rounded-xl p-6 shadow-sm border">
+            <h4 class="font-semibold text-primary mb-3">Core Features</h4>
+            <ul class="text-sm space-y-2 list-disc list-inside text-slate-600">
+              <li>Secure authentication & role management</li>
+              <li>Dynamic gadget catalog</li>
+              <li>Rental transaction processing</li>
+              <li>Admin dashboard & reporting</li>
             </ul>
           </div>
 
-          <div class="bg-white rounded-xl p-5 shadow">
-            <h4 class="font-semibold mb-2">Technologies</h4>
-            <ul class="text-sm space-y-1 list-disc list-inside">
-              <li>Laravel 11</li>
+          <div class="bg-white rounded-xl p-6 shadow-sm border">
+            <h4 class="font-semibold text-primary mb-3">Technology Stack</h4>
+            <ul class="text-sm space-y-2 list-disc list-inside text-slate-600">
+              <li>Laravel 11 Framework</li>
               <li>MySQL Database</li>
-              <li>Blade Template Engine</li>
+              <li>Blade Templating</li>
               <li>Tailwind CSS</li>
             </ul>
           </div>
@@ -76,48 +90,48 @@
   </section>
 
   <!-- BEANOLOGY -->
-  <section id="beanology" class="bg-white">
-    <div class="max-w-7xl mx-auto px-6 py-20">
-      <div class="grid lg:grid-cols-2 gap-14 items-center">
+  <section id="beanology" class="bg-white border-t">
+    <div class="max-w-7xl mx-auto px-6 py-24">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
         <div class="order-2 lg:order-1">
-          <span class="inline-block mb-3 px-4 py-1 rounded-full bg-emerald-100 text-emerald-600 text-sm font-medium">Coffee Shop Website</span>
-          <h3 class="text-3xl font-bold text-slate-800 mb-5">Beanology</h3>
-          <p class="mb-6 leading-relaxed">
-            Beanology is a coffee shop website designed to showcase menu offerings, brand identity, and store information. The website focuses on clean visuals, smooth layout flow, and a warm aesthetic that reflects a modern café atmosphere.
+          <span class="inline-block mb-4 px-4 py-1 rounded-full bg-emerald-50 text-emerald-600 text-sm font-medium">Coffee Shop Website</span>
+          <h3 class="text-3xl font-bold text-primary mb-6">Beanology</h3>
+          <p class="mb-8 leading-relaxed text-slate-600">
+            Beanology is a modern coffee shop website designed to highlight brand identity, menu presentation, and store information through a warm yet minimalist user interface.
           </p>
 
           <div class="grid sm:grid-cols-2 gap-6">
-            <div class="bg-slate-50 rounded-xl p-5 border">
-              <h4 class="font-semibold mb-2">Main Features</h4>
-              <ul class="text-sm space-y-1 list-disc list-inside">
-                <li>Interactive menu display</li>
+            <div class="bg-soft rounded-xl p-6 border">
+              <h4 class="font-semibold text-primary mb-3">Main Features</h4>
+              <ul class="text-sm space-y-2 list-disc list-inside text-slate-600">
+                <li>Menu showcase layout</li>
                 <li>Brand-focused landing page</li>
-                <li>Responsive layout</li>
+                <li>Fully responsive design</li>
                 <li>Contact & location section</li>
               </ul>
             </div>
 
-            <div class="bg-slate-50 rounded-xl p-5 border">
-              <h4 class="font-semibold mb-2">Design Approach</h4>
-              <ul class="text-sm space-y-1 list-disc list-inside">
-                <li>Minimalist UI</li>
-                <li>Warm color palette</li>
-                <li>Modern typography</li>
-                <li>Mobile-first design</li>
+            <div class="bg-soft rounded-xl p-6 border">
+              <h4 class="font-semibold text-primary mb-3">Design Principles</h4>
+              <ul class="text-sm space-y-2 list-disc list-inside text-slate-600">
+                <li>Minimalist layout</li>
+                <li>Warm neutral color palette</li>
+                <li>Clear typography hierarchy</li>
+                <li>User-focused navigation</li>
               </ul>
             </div>
           </div>
         </div>
 
-        <img src="img/Beanology.png" alt="Beanology" class="order-1 lg:order-2 rounded-2xl shadow-lg">
+        <img src="img/Beanology.png" alt="Beanology" class="order-1 lg:order-2 rounded-2xl shadow-xl border">
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-slate-900 text-slate-300">
+  <footer class="bg-primary text-slate-300">
     <div class="max-w-7xl mx-auto px-6 py-10 text-center">
-      <p class="text-sm">© 2026 — Project Documentation by Valen</p>
+      <p class="text-sm">© 2026 — Project Documentation | Valen</p>
     </div>
   </footer>
 

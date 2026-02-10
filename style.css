@@ -1015,6 +1015,15 @@ footer {
   color:var(--sub)
 }
 
+/* CARDS LAYOUT */
+.ryzcle-cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 40px;
+}
+
 /* CARD */
 .ryzcle-card {
   background: #ffffff;

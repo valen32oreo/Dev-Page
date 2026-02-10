@@ -1030,7 +1030,6 @@ footer {
   border-radius: 40px;
   padding: clamp(28px, 4vw, 52px);
   border: 1px solid #e5e7eb;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.06);
   transition: all 0.35s ease;
 }
 

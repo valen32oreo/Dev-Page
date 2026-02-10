@@ -1014,3 +1014,166 @@ footer {
   font-size:13px;
   color:var(--sub)
 }
+
+/* CARD */
+.ryzcle-card {
+  background: #ffffff;
+  border-radius: 40px;
+  padding: clamp(28px, 4vw, 52px);
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+  transition: all 0.35s ease;
+}
+
+.ryzcle-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.09);
+}
+
+/* LOGO ROW (SELALU SEJAJAR) */
+.ryzcle-logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(20px, 4vw, 40px);
+  margin-bottom: 36px;
+  flex-wrap: nowrap;
+}
+
+.ryzcle-icon {
+  height: clamp(42px, 6vw, 64px);
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.ryzcle-wordmark {
+  height: clamp(42px, 6vw, 64px);
+  max-width: 70%;
+  object-fit: contain;
+}
+
+.ryzcle-divider {
+  width: 1px;
+  height: clamp(42px, 6vw, 56px);
+  background: #d1d5db;
+  flex-shrink: 0;
+}
+
+/* DESCRIPTION */
+.ryzcle-desc {
+  text-align: center;
+  font-size: clamp(14px, 2vw, 16px);
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+/* TABLET (<= 900px) */
+@media (max-width: 900px) {
+  .ryzcle-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+/* MOBILE (SEMUA HANDPHONE) */
+@media (max-width: 600px) {
+  #ryzcle {
+    padding: 70px 14px;
+  }
+
+  .ryzcle-cards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .ryzcle-card {
+    border-radius: 24px;
+    padding: 26px 20px;
+  }
+
+  /* LOGO TETAP SEJAJAR DI MOBILE */
+  .ryzcle-logo-row {
+    gap: 16px;
+  }
+
+  .ryzcle-icon {
+    height: 38px;
+  }
+
+  .ryzcle-wordmark {
+    height: 38px;
+    max-width: 65%;
+  }
+
+  .ryzcle-divider {
+    height: 34px;
+  }
+
+  .ryzcle-desc {
+    font-size: 14px;
+  }
+}
+
+/* Ryzcle Corp Button */
+.ryzcle-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ryzcle-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  margin-top: 40px;
+  height: 50px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+  background: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* background animation */
+.ryzcle-link-btn::before,
+.ryzcle-link-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.ryzcle-link-btn::before {
+  left: -10px;
+  background: #B3D1FF;
+}
+
+.ryzcle-link-btn::after {
+  right: -10px;
+  background: #AFFFB0;
+}
+
+.ryzcle-link-btn:hover::before,
+.ryzcle-link-btn:hover::after {
+  width: 58%;
+}
+
+.ryzcle-link-btn span {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.ryzcle-link-btn:hover span {
+  color: #ffffff;
+}
+/* End */
